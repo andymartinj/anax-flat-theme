@@ -1,21 +1,66 @@
-/** 
+/**
 * Anax Flat theme.
 */
+
 @import url(modules.less);
 
 
 
 /** --------------------------------------------------------------
- *  Logo images
+ *  General styling
  */
-.logo-1 {
-    position: absolute;
-    top: 70px;
-    left: -140px;
+
+
+/* Breadcrumb list */
+
+@blue: #315072;
+
+.breadcrumb-list {
+
+    a {
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+     li {
+         display: inline;
+     }
+
+     li:before {
+         content: "« ";
+     }
 }
 
-.site-logo-text-icon {
-    img {
-        vertical-align: bottom;
-    }
+.breadcrumb-wrap .breadcrumb-list a:hover {
+    color: @blue;
+}
+
+/* Links */
+
+a {
+    color: @blue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+}
+
+/* Byline */
+
+.byline {
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 14px;
+    font-style: italic;
+    border-top: 1px dashed gray;
+    overflow: auto;
+}
+
+.byline-img {
+    width: 75px;
+    float: left;
+    margin-right: 10px;
 }
