@@ -1,14 +1,8 @@
 # Anax Flat Theme
 
-[![Join the chat at https://gitter.im/mosbth/design](https://badges.gitter.im/mosbth/design.svg)](https://gitter.im/mosbth/design?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![Build Status](https://travis-ci.org/canax/anax-flat-theme.svg?branch=master)](https://travis-ci.org/canax/anax-flat-theme)
+Created for training purposes, for [dbwebb course design](http://dbwebb.se/design) at [BTH](https://www.bth.se/).
 
-Base for a theme to Anax Flat
+The theme is built for the Anax-flat framework. It is available on GitHub at [mosbth/anax-flat](https://github.com/mosbth/anax-flat).
 
-
-
-##Revisions
-
-v0.1.1* (2016-06-07)
-
-* Updates after testing.
+This theme was created by André Johansson, student at Blekinge Institute of
+Technology (BTH).
