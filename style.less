@@ -10,8 +10,40 @@
  *  General styling
  */
 
+@textColorWhite: #E9E9E9;
+@orange: #FF8900;
+
 html {
     overflow-y: scroll;
+}
+
+.wrap-all {
+    border: 1px solid gray;
+    box-shadow: 0 0 10px;
+}
+
+/* Header */
+
+.site-header {
+    position: relative;
+}
+
+.logo-1 {
+    display: none;
+}
+.site-logo-text-icon {
+    img {
+        display: inline;
+    }
+}
+
+.outer-wrap-header {
+    background: url(../img/space.jpg);
+    color: @textColorWhite;
+}
+
+.inner-wrap-header {
+    background-color: rgba(27, 40, 56, 0.85);
 }
 
 
@@ -25,6 +57,7 @@ html {
         color: black;
         text-decoration: none;
         font-weight: bold;
+        font-style: italic;
     }
 
      li {
@@ -54,8 +87,6 @@ a:hover {
 /* Byline */
 
 .byline {
-    width: 90%;
-    margin: 10px auto;
     padding: 10px;
     font-size: 14px;
     font-style: italic;
@@ -67,4 +98,34 @@ a:hover {
     width: 75px;
     float: left;
     margin-right: 10px;
+}
+
+/* Footer */
+
+.footer {
+    color: @textColorWhite;
+    background-color: rgb(27, 40, 56);
+    a {
+        color: @orange;
+    }
+    a:hover {
+        color: black;
+    }
+}
+
+.site-footer {
+    p {
+        font-weight: 400;
+        font-style: italic;
+    }
+}
+
+/* Mobile menu */
+
+.rm-max .rm-mobile {
+    background-color: rgba(27, 40, 56, 0.98);
+}
+
+.rm-default a:hover {
+    color: @orange;
 }

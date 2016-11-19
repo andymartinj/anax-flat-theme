@@ -9,34 +9,41 @@
 
 @maxButtonFontSize: 2em;
 
-// Size each item in the header
-.site-logo-text,
-.navbar2,
-.profile {
-    float: left;
-    width: 40%;
-}
-
 .rm-desktop {
-    float: right;
+    float: left;
+    li {
+        a {
+            color: @textColorWhite;
+            padding: 0 25px;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: .1rem;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        a:hover {
+            color: @orange;
+            text-decoration: none;
+        }
+    }
 }
 
-.site-header {
-    height: 80px;
+.flash-wrap {
+    text-align: center;
 }
 
 // Site title
 .site-logo-text {
     font-size: 28px;
-    padding: 10px;
+    margin-bottom: @magicNumber / 2;
 
     a {
         text-decoration: none;
-        color: black;
+        color: @textColorWhite;
     }
 
     a:hover {
-        color: #315072;
+        color: @orange;
     }
 }
 

@@ -1,0 +1,194 @@
+@totalWidth: 100%;           // Fluid layout
+
+.wrap-all {
+    max-width: 960px;
+    .container();
+}
+
+.row {
+    .row();
+}
+
+.header,
+.flash,
+.footer {
+    .column(12);
+}
+
+.site-header {
+    height: @magicNumber * 4;
+}
+
+.flash-wrap img {
+    width: 960px;
+}
+
+.footer {
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.site-logo-text {
+    .column(5);
+}
+
+.profile {
+    .column(6);
+}
+
+.article {
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.navbar2 {
+    .column(12);
+    font-size: 16px;
+    margin-top: @magicNumber;
+    margin-bottom: @magicNumber / 3;
+}
+
+
+.footer-column {
+    ul {
+        padding: 1em;
+        list-style: none;
+    }
+    .column(4);
+}
+
+.footer-column-wrapper {
+    overflow: auto;
+    border-top: 1px solid gray;
+    text-align: center;
+}
+
+.outer-wrap-footer {
+    clear: both;
+}
+
+.site-footer {
+    text-align: center;
+    border-top: 1px solid gray;
+    padding-bottom: 20px;
+    p {
+        margin-bottom: @magicNumber / 3;
+    }
+    ul {
+        list-style: none;
+        margin: 0;
+    }
+
+    li {
+        display: inline;
+    }
+}
+
+.main {
+    .column(11);
+}
+
+.main {
+    &.has-sidebar {
+        .column(9);
+    }
+}
+
+.sidebar {
+    .column(3);
+    padding-left: 15px;
+}
+
+.breadcrumb {
+    margin-bottom: 22px;
+
+    ul {
+        list-style: none;
+    }
+
+    li {
+        display: inline;
+
+        &::after {
+            content: " » ";
+        }
+    }
+}
+
+.next-previous {
+    clear: right;
+    padding: 5px;
+    .next,
+    .previous {
+        .column(3);
+    }
+
+    .next {
+        float: right;
+        text-align: right;
+    }
+}
+
+.byline {
+    .column(11);
+    .push(0.5);
+}
+
+/** --------------------------------------------------------------
+ *  Responsive design
+ */
+img {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+    .profile {
+        .column(1);
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+    .sidebar {
+        padding: 10px;
+        .column(11);
+    }
+    .main {
+        &.has-sidebar {
+            .column(12);
+        }
+    }
+    .navbar2 {
+        display: none;
+    }
+    .site-logo-text {
+        .column(10);
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .footer-column {
+        .column(12);
+    }
+
+    .next-previous {
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .site-logo-text {
+        font-size: 1.5em;
+        padding: 10px;
+    }
+    .site-logo-text-icon {
+        display: none;
+    }
+    .rm-max .rm-small .rm-button {
+        font-size: 1.5em;
+    }
+ }

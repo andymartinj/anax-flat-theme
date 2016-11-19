@@ -1,0 +1,52 @@
+@import "typography-font-families.less";
+@import "typography-sizes.less";
+@import "typography-mixins.less";
+@import "typography-defaults.less";
+
+body {
+    .typographyHeadings();
+    .typographyTextElements();
+    .typographyListElements();
+    .typographyOtherElements();
+}
+
+.outer-wrap-main {
+    .font();
+    .typographyCodeElements();
+    .typographyTableElements();
+
+    article {
+        table {
+            th {
+                padding: @magicNumber / 2;
+            }
+            td {
+                padding: @magicNumber / 2;
+            }
+        }
+    }
+    hr {
+        top: 0;
+    }
+
+    margin-bottom: @magicNumber - 4;
+}
+
+.outer-wrap-flash {
+    margin-bottom: @magicNumber + 4;
+}
+
+.outer-wrap-breadcrumb  {
+    margin-bottom: @magicNumber - 4;
+}
+
+.columns {
+    margin-bottom: @magicNumber / 6;
+
+    li {
+        padding: @magicNumber / 6;
+    }
+    h4 {
+        margin-bottom: @magicNumber + 6;
+    }
+}
