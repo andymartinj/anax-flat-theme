@@ -11,7 +11,7 @@
 
 // Menu item current/selected
 @navbarItemSelectedColor:       inherit;
-@navbarItemSelectedBgColor:     inherit;
+@navbarItemSelectedBgColor:     inherit; 
 //@navbarItemSelectedBorderColor: darken(lime, 10%);
 
 // Mobile button
@@ -30,7 +30,7 @@
 //@navbarMenuButtonHoverBorderColor:   #333;
 
 // The menu button clicked
-@navbarMenuButtonClickedColor:          #315072;
+@navbarMenuButtonClickedColor:          #9FB129;
 @navbarMenuButtonClickedBgColor:        @navbarMenuButtonHoverBgColor;
 //@navbarMenuButtonClickedBorderColor:    lime;
 
@@ -157,19 +157,17 @@ a.rm-button {
         white-space: nowrap;
         padding: 1em;
         outline: none;
-        margin-left: 10px;
 
         &:hover {
-            color: #315072;
         }
     }
 
      // The base for the submenu
      ul {
-        position: absolute;
+        position: absolute; 
         z-index: @submenuZIndex;
-        left: -9999px;
-        //padding-left: 8px;
+        left: -9999px; 
+        //padding-left: 8px; 
 
         // Display the submenu, class to use from javascript
         &.rm-show-submenu {
@@ -177,12 +175,12 @@ a.rm-button {
         }
 
         li {
-            box-shadow: 0 0 1px rgba(0, 0, 0, 0.4);
+            box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.4);
          }
 
          // Submenu
          ul {
-             left: -9999px;
+             left: -9999px; 
          }
      }
 }
@@ -195,7 +193,7 @@ a.rm-button {
 .rm-desktop {
 
     ul {
-        background-color: @submenuBgColor;
+        background-color: @submenuBgColor; 
     }
 
     li {
@@ -206,8 +204,8 @@ a.rm-button {
         &.rm-selected,
         &.selected-parent, // for selected descendants
         &.selected {
-            //color: @navbarItemSelectedColor;
-            //background-color: @navbarItemSelectedBgColor;
+            //color: @navbarItemSelectedColor; 
+            //background-color: @navbarItemSelectedBgColor; 
         }
 
 
@@ -247,7 +245,7 @@ a.rm-button {
                 left: auto;
                 left: 30%;
             }
-        }
+        } 
 
 
         // Dropdown submenu, remove hide show button
@@ -264,7 +262,7 @@ a.rm-button {
  */
 .rm-mobile {
     width: 100%;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
     background-color: @mobileBgColor;
     color: @mobileColor;
 
@@ -274,7 +272,7 @@ a.rm-button {
 
     li {
         display: block;
-        box-shadow: 0 0 1px rgba(255, 255, 255, 0.4);
+        box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.4);
 
         // All items of the menu
         a:before {
@@ -309,7 +307,7 @@ a.rm-button {
         // Hover over a menu item
         &:hover {
             //border-color: @navbarMobileItemHoverBorderColor;
-        }
+        } 
     }
 }
 
@@ -354,7 +352,7 @@ a.rm-button {
         z-index: 998;
         top: 0;
         transform: translateX(100%);
-        width: 90%;
+        width: 500px;
         max-width: 500px;
         height: 500px;
         overflow-y: auto;
@@ -379,7 +377,7 @@ a.rm-button {
         .rm-submenu-button {
             font-family: FontAwesome;
             float: right;
-            box-shadow: 0 0 1px rgba(255, 255, 255, 0.4);
+            box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.4);
             background-color: @maxButtonSubmenuBgColor;
             padding: 8px 24px;
             margin-right: 8px;

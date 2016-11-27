@@ -1,0 +1,79 @@
+@import url(style.less);
+
+@base: #0E54A7;
+@baseDarker: #063266;
+@complimentary: #FF9C01;
+@bgColor: #E9E9E9;
+@textColor: #000000;
+@borderColor: #666666;
+
+.transparent(@a) {
+    background-color: rgba(6, 50, 102, @a);
+}
+
+html {
+
+    /** ------------------------------------
+    */
+
+    .outer-wrap-header {
+        background: url(../img/space.jpg);
+        color: @bgColor;
+    }
+    .inner-wrap-header {
+        .transparent(0.85);
+    }
+    .footer {
+        color: @bgColor;
+        background-color: @baseDarker;
+        a {
+            color: @complimentary;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+    .rm-desktop {
+        li {
+            a {
+                color: @bgColor;
+            }
+            a:hover {
+                color: @complimentary;
+            }
+        }
+    }
+    .site-logo-text {
+        font-family: @fontFamilyHeader;
+        a {
+            color: @bgColor;
+        }
+        a:hover {
+            color: @complimentary;
+        }
+    }
+    .rm-max .rm-mobile {
+        .transparent(0.98);
+    }
+    .rm-default {
+        a {
+            color: @bgColor;
+        }
+        a:hover {
+            color: @complimentary;
+        }
+    }
+    a {
+        color: @base;
+        text-decoration: none;
+    }
+    a:hover {
+        color: @complimentary;
+    }
+    .breadcrumb-wrap .breadcrumb-list a:hover {
+        color: @complimentary;
+    }
+    .rm-max .rm-small .rm-button.rm-clicked {
+        color: @bgColor;
+    }
+}

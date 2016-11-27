@@ -1,0 +1,33 @@
+@import url(default.less);
+
+@base: #949494;
+@baseDarker: #D3D3D3;
+@complimentary: #2D2D2D;
+@bgColor: #666666;
+@textColor: #000000;
+@borderColor: #242424;
+
+.transparent(@a) {
+    background-color: @baseDarker;
+}
+
+html {
+    a {
+        color: @borderColor;
+        text-decoration: underline;
+    }
+    a:hover {
+        color: @bgColor;
+    }
+    .breadcrumb-wrap .breadcrumb-list a:hover {
+        color: @bgColor;
+    }
+    .rm-default {
+        a {
+            color: @textColor;
+        }
+        a:hover {
+            color: @complimentary;
+        }
+    }
+}

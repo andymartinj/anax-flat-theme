@@ -1,0 +1,27 @@
+@import url(light.less);
+
+@base: #F6003E;
+@baseDarker: #0499DA;
+@complimentary: #FFD300;
+@bgColor: #F6003E;
+@textColor: #000000;
+@borderColor: #242424;
+
+.transparent(@a) {
+    background-color: rgba(4, 153, 218, @a);
+}
+
+html {
+    background-color: @base;
+    .wrap-all {
+        background-color: #FFFFFF;
+    }
+    .rm-default {
+        a {
+            color: @base;
+        }
+        a:hover {
+            color: @complimentary;
+        }
+    }
+}

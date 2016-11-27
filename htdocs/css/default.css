@@ -1377,3 +1377,61 @@ html {
 }
 /** --------------------------------------------------------------
 */
+html {
+  /** ------------------------------------
+    */
+}
+html .outer-wrap-header {
+  background: url(../img/space.jpg);
+  color: #E9E9E9;
+}
+html .inner-wrap-header {
+  background-color: rgba(6, 50, 102, 0.85);
+}
+html .footer {
+  color: #E9E9E9;
+  background-color: #063266;
+}
+html .footer a {
+  color: #FF9C01;
+}
+html .footer a:hover {
+  text-decoration: underline;
+}
+html .rm-desktop li a {
+  color: #E9E9E9;
+}
+html .rm-desktop li a:hover {
+  color: #FF9C01;
+}
+html .site-logo-text {
+  font-family: 'Roboto', sans-serif;
+}
+html .site-logo-text a {
+  color: #E9E9E9;
+}
+html .site-logo-text a:hover {
+  color: #FF9C01;
+}
+html .rm-max .rm-mobile {
+  background-color: rgba(6, 50, 102, 0.98);
+}
+html .rm-default a {
+  color: #E9E9E9;
+}
+html .rm-default a:hover {
+  color: #FF9C01;
+}
+html a {
+  color: #0E54A7;
+  text-decoration: none;
+}
+html a:hover {
+  color: #FF9C01;
+}
+html .breadcrumb-wrap .breadcrumb-list a:hover {
+  color: #FF9C01;
+}
+html .rm-max .rm-small .rm-button.rm-clicked {
+  color: #E9E9E9;
+}
