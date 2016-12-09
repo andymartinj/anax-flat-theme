@@ -24,9 +24,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
-@import url('https://fonts.googleapis.com/css?family=Exo');
-@import url('https://fonts.googleapis.com/css?family=Vollkorn');
-@import url('https://fonts.googleapis.com/css?family=PT+Sans');
 html {
   font-family: 'Raleway', sans-serif;
   /* 1 */
@@ -1219,7 +1216,7 @@ body h3,
 body h4,
 body h5,
 body h6 {
-  font-family: 'Exo', sans-serif;
+  font-family: 'Playfair Display', serif;
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -1381,10 +1378,10 @@ body hr:after {
 }
 body p,
 body span {
-  font: 100.01%/1.5 'Vollkorn', serif;
+  font: 100.01%/1.5 'Cabin', sans-serif;
 }
 .outer-wrap-main {
-  font: 100.01%/1.5 'Vollkorn', serif;
+  font: 100.01%/1.5 'Cabin', sans-serif;
 }
 .outer-wrap-main pre,
 .outer-wrap-main code,
@@ -1529,7 +1526,7 @@ html .rm-desktop li a:hover {
   color: #FF9C01;
 }
 html .site-logo-text {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 html .site-logo-text a {
   color: #E9E9E9;
@@ -1567,6 +1564,22 @@ html .inner-wrap-main img:hover {
   transform: scale(0.9);
   border: 1px solid black;
 }
-html .rm-desktop {
-  font-family: 'Exo', sans-serif;
+html h1,
+html h2,
+html h3,
+html h4 {
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.9);
+}
+html .inner-wrap-header,
+html .inner-wrap-footer {
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.75);
+}
+html .rm-button {
+  text-shadow: 0 0 0;
+}
+html .breadcrumb-wrap {
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+html .inner-wrap-main img {
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }

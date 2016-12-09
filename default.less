@@ -23,7 +23,7 @@ html {
     .inner-wrap-header {
         .transparent(0.85);
     }
-    .footer {
+    .outer-wrap-footer {
         color: @bgColor;
         background-color: @baseDarker;
         a {
@@ -75,5 +75,16 @@ html {
     }
     .rm-max .rm-small .rm-button.rm-clicked {
         color: @bgColor;
+    }
+
+    .inner-wrap-main {
+        img {
+            border: 1px solid white;
+            transition: all .2s ease-in-out;
+        }
+        img:hover {
+            transform: scale(0.9);
+            border: 1px solid black;
+        }
     }
 }

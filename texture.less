@@ -1,0 +1,21 @@
+@import url(default.less);
+
+html {
+	.outer-wrap-main, .outer-wrap-breadcrumb, .outer-wrap-after-main {
+        background: url(../img/runway.jpg);
+    }
+    .inner-wrap-main, .inner-wrap-breadcrumb, .inner-wrap-after-main {
+        background-color: rgba(255, 255, 255, 0.85);
+    }
+    .outer-wrap-after-main {
+        margin-top: @magicNumber * -1;
+    }
+    .route-grid, .route-typography {
+        .outer-wrap-main, .outer-wrap-breadcrumb, .outer-wrap-after-main {
+            background: transparent;
+        }
+        .inner-wrap-main, .inner-wrap-breadcrumb, .inner-wrap-after-main {
+            background-color: transparent;
+        }
+    }
+}

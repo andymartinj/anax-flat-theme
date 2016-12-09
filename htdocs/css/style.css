@@ -497,15 +497,29 @@ template {
   width: 31.25%;
   margin-left: 1.04166667%;
   margin-right: 1.04166667%;
+  margin: 0;
+  width: 31.95833333%;
 }
 .footer-column ul {
   padding: 1em;
   list-style: none;
 }
+.footer-column:nth-child(1) {
+  margin-right: 1.03166667%;
+}
+.footer-column:nth-child(2) {
+  margin-left: 1.03166667%;
+  margin-right: 1.03166667%;
+}
+.footer-column:nth-child(3) {
+  margin-left: 1.03166667%;
+}
 .footer-column-wrapper {
   overflow: auto;
   border-top: 1px solid #666666;
   text-align: center;
+  position: relative;
+  width: 100%;
 }
 .outer-wrap-footer {
   clear: both;
@@ -531,9 +545,10 @@ template {
   display: inline;
   float: left;
   box-sizing: border-box;
-  width: 89.58333333%;
+  width: 81.25%;
   margin-left: 1.04166667%;
   margin-right: 1.04166667%;
+  margin-left: 9.375%;
 }
 .main.has-sidebar {
   display: inline;
@@ -552,8 +567,8 @@ template {
   margin-right: 1.04166667%;
   padding-left: 15px;
 }
-.breadcrumb {
-  margin-bottom: 22px;
+.sidebar-right {
+  padding-right: 10px;
 }
 .breadcrumb ul {
   list-style: none;
@@ -564,10 +579,18 @@ template {
 .breadcrumb li::after {
   content: " » ";
 }
+.inner-wrap-breadcrumb {
+  padding: 24px;
+  padding-bottom: 28px;
+  margin-top: -3px;
+}
 .breadcrumb-list a {
   text-decoration: none;
   font-weight: bold;
   font-style: italic;
+}
+.breadcrumb-list ul {
+  margin: 0;
 }
 .breadcrumb-list li {
   display: inline;
@@ -606,10 +629,80 @@ template {
   border-top: 1px dashed #666666;
   overflow: auto;
 }
-.byline-img {
-  width: 75px;
+.byline img {
   float: left;
   margin-right: 10px;
+}
+.blog-list {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.meta-header {
+  font-style: italic;
+}
+.meta-footer p {
+  font-weight: bold;
+}
+.share {
+  padding: 10px;
+}
+.figure {
+  display: block;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.figure img {
+  max-width: 100%;
+  display: block;
+}
+.figure figcaption {
+  display: block;
+  caption-side: bottom;
+  padding-top: 6px;
+  color: gray;
+}
+.figure figcaption p {
+  margin: 0;
+  font-size: .75em;
+  font-style: italic;
+}
+.figure.left {
+  float: left;
+  margin-right: 18px;
+}
+.figure.right {
+  float: right;
+  margin-left: 18px;
+}
+.figure.center {
+  clear: both;
+  margin: auto;
+}
+.figure.center figcaption {
+  text-align: center;
+}
+.figure.responsive {
+  display: block;
+  clear: left;
+}
+@media screen and (max-width: 960px) {
+  .figure.left {
+    float: none;
+    margin: auto;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .figure.right {
+    float: none;
+    margin: auto;
+    margin-right: 0;
+    margin-left: 0;
+    margin-right: 18px;
+  }
+  .figure.responsive {
+    width: 100%;
+  }
 }
 /** --------------------------------------------------------------
  *  Responsive design
@@ -937,9 +1030,41 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   letter-spacing: .1rem;
   text-decoration: none;
   text-transform: uppercase;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.rm-desktop li a::before {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  color: transparent;
+  content: '•';
+  text-shadow: 0 0 transparent;
+  font-size: 1.2em;
+  -webkit-transition: text-shadow 0.3s, color 0.3s;
+  -moz-transition: text-shadow 0.3s, color 0.3s;
+  transition: text-shadow 0.3s, color 0.3s;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+  pointer-events: none;
 }
 .rm-desktop li a:hover {
   text-decoration: none;
+}
+.rm-desktop li a:hover::before,
+.rm-desktop li a:focus::before {
+  color: #E9E9E9;
+  text-shadow: 10px 0 #fff, -10px 0 #fff;
+}
+.rm-desktop li ul li {
+  padding: 10px;
+  background-color: #063266;
+  top: 8px;
+}
+.rm-desktop li ul li a::before {
+  content: "";
 }
 .flash-wrap {
   text-align: center;
@@ -986,15 +1111,15 @@ a.rm-button.rm-clicked .rm-button-face-2 {
  * Pull a column right @offset columns.
  */
 .route-grid .wrap-all {
-  background: url(../img/grid960x12x60x20.png) repeat-y fixed center center;
-  background-size: 102% auto;
+  background: url(../img/grid940x12x60x20-nomargin.png) repeat-y fixed center center;
+  background-size: 100% auto;
   margin-left: auto;
   margin-right: auto;
   max-width: 960px;
 }
 @media (min-width: 960px) {
   .route-grid .wrap-all {
-    background-size: 980px auto;
+    background-size: 960px auto;
   }
 }
 .route-typography .wrap-all {
@@ -1257,7 +1382,6 @@ body span {
 }
 .outer-wrap-main {
   font: 100.01%/1.5 'Cabin', sans-serif;
-  margin-bottom: 20px;
 }
 .outer-wrap-main pre,
 .outer-wrap-main code,
@@ -1350,12 +1474,6 @@ body span {
 .outer-wrap-main hr {
   top: 0;
 }
-.outer-wrap-flash {
-  margin-bottom: 28px;
-}
-.outer-wrap-breadcrumb {
-  margin-bottom: 20px;
-}
 .columns {
   margin-bottom: 4px;
 }
@@ -1377,3 +1495,6 @@ html {
 }
 /** --------------------------------------------------------------
 */
+.git-img {
+  border-radius: 6px;
+}
