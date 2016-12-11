@@ -1588,3 +1588,19 @@ html .inner-wrap-breadcrumb {
 html .byline {
   border: none;
 }
+html {
+  background: url(../img/clouds-photo.jpg) fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+html .inner-wrap-main,
+html .inner-wrap-breadcrumb,
+html .inner-wrap-after-main {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+html .inner-wrap {
+  border: 2px solid black;
+  margin-bottom: 0;
+  border-bottom: none;
+}

@@ -1588,3 +1588,53 @@ html .inner-wrap-breadcrumb {
 html .byline {
   border: none;
 }
+html {
+  background: url(../img/clouds-photo.jpg) fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+html .inner-wrap-main,
+html .inner-wrap-breadcrumb,
+html .inner-wrap-after-main {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+html .inner-wrap {
+  border: 2px solid black;
+  margin-bottom: 0;
+  border-bottom: none;
+}
+html {
+  background: url(../img/clouds-texture.jpg);
+  background-size: auto;
+  background-repeat: repeat;
+  background-position: center;
+}
+html .inner-wrap-main,
+html .inner-wrap-breadcrumb,
+html .inner-wrap-after-main {
+  background-color: #ffffff;
+}
+html .inner-wrap {
+  border: none;
+}
+html .wrap-all {
+  border: 2px solid black;
+}
+html .breadcrumb-list ul {
+  float: left;
+}
+html .breadcrumb-list li::before {
+  content: url(../img/airliner.png);
+  padding-right: 5px;
+  padding-left: 5px;
+}
+html .breadcrumb-list::after {
+  content: url(../img/arrow.png);
+  float: right;
+}
+@media screen and (max-width: 400px) {
+  html .breadcrumb-list::after {
+    content: "";
+  }
+}

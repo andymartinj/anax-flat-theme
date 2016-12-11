@@ -1,0 +1,38 @@
+@import url(background.less);
+
+html {
+    background: url(../img/clouds-texture.jpg);
+    background-size: auto;
+    background-repeat: repeat;
+    background-position: center;
+    .inner-wrap-main, .inner-wrap-breadcrumb, .inner-wrap-after-main {
+        background-color: rgba(255, 255, 255, 1);
+    }
+    .inner-wrap {
+        border: none;
+    }
+    .wrap-all {
+        border: 2px solid black;
+    }
+    .breadcrumb-list {
+        ul {
+            float: left;
+        }
+        li {
+            &::before {
+                content: url(../img/airliner.png);
+                padding-right: 5px;
+                padding-left: 5px;
+            }
+        }
+        &::after {
+            content: url(../img/arrow.png);
+            float: right;
+            @media screen {
+                 @media (max-width: 400px) {
+                    content: "";
+                }
+            }
+        }
+    }
+}
